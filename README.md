@@ -295,6 +295,4 @@ In production, this should be set up as a scheduled task to run daily.
 
 ## License
 
-This project is licensed under the ISC License. #   c a r d - a u t h o r i z a t i o n - e n g i n e 
- 
- 
+This project is licensed under the ISC License. #
