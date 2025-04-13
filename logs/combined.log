@@ -1,0 +1,290 @@
+2025-04-10 12:38:24 [INFO] [card-auth]: Processing authorization request for transaction tx-12345 {"transactionId":"tx-12345","accountId":"8cdabe06-1631-11f0-a70a-28c5c8d80849"}
+2025-04-10 12:38:24 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-10 12:38:24 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-10 12:38:24 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-10 12:38:24 [INFO] [card-auth]: Transaction tx-12345 declined: insufficient_funds {"transactionId":"tx-12345","reasonCode":"insufficient_funds","processingTimeMs":191}
+2025-04-10 12:38:24 [INFO] [card-auth]: Authorization request processed in 218ms {"transactionId":"tx-12345","totalTimeMs":218,"processingTimeMs":191,"decision":"decline"}
+2025-04-10 12:38:24 [WARN] [card-auth]: Enrichment service timed out for transaction tx-12345 
+2025-04-10 23:50:36 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-10 23:50:36 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-10 23:50:36 [INFO] [card-auth]: Database connection established successfully 
+2025-04-10 23:50:36 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-10 23:50:36 [INFO] [card-auth]: Server running on port 3000 
+2025-04-10 23:50:36 [INFO] [card-auth]: Environment: development 
+2025-04-10 23:50:36 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-10 23:58:55 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-10 23:58:55 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-10 23:58:55 [INFO] [card-auth]: Database connection established successfully 
+2025-04-10 23:58:55 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-10 23:58:55 [INFO] [card-auth]: Server running on port 3000 
+2025-04-10 23:58:55 [INFO] [card-auth]: Environment: development 
+2025-04-10 23:58:55 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-10 23:59:16 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-10 23:59:16 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-10 23:59:16 [INFO] [card-auth]: Database connection established successfully 
+2025-04-10 23:59:16 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-10 23:59:16 [INFO] [card-auth]: Server running on port 3000 
+2025-04-10 23:59:16 [INFO] [card-auth]: Environment: development 
+2025-04-10 23:59:16 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-11 00:05:34 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-11 00:05:34 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-11 00:05:34 [INFO] [card-auth]: Database connection established successfully 
+2025-04-11 00:05:34 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-11 00:05:34 [INFO] [card-auth]: Server running on port 3000 
+2025-04-11 00:05:34 [INFO] [card-auth]: Environment: development 
+2025-04-11 00:05:34 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-11 00:05:48 [DEBUG] [card-auth]: GET /api-docs/ {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:05:48 [DEBUG] [card-auth]: GET /api-docs/swagger-ui.css {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:05:48 [DEBUG] [card-auth]: GET /api-docs/swagger-ui-bundle.js {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:05:48 [DEBUG] [card-auth]: GET /api-docs/swagger-ui-standalone-preset.js {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:05:48 [DEBUG] [card-auth]: GET /api-docs/swagger-ui-init.js {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:11:37 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:11:37 [INFO] [card-auth]: Processing authorization request for transaction tx_1234567890 {"transactionId":"tx_1234567890","accountId":"acc_9876543210"}
+2025-04-11 00:11:37 [ERROR] [card-auth]: Authorization error: Cannot add or update a child row: a foreign key constraint fails (`card_authorization`.`transactions`, CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE) 
+2025-04-11 00:11:37 [ERROR] [card-auth]: Failed to save error transaction: Cannot add or update a child row: a foreign key constraint fails (`card_authorization`.`transactions`, CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE) 
+2025-04-11 00:11:37 [INFO] [card-auth]: Authorization request processed in 62ms {"transactionId":"tx_1234567890","totalTimeMs":62,"processingTimeMs":61,"decision":"decline"}
+2025-04-11 00:15:36 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:15:36 [INFO] [card-auth]: Processing authorization request for transaction tx_5566778899 {"transactionId":"tx_5566778899","accountId":"acc_9876543210"}
+2025-04-11 00:15:36 [ERROR] [card-auth]: Authorization error: Cannot add or update a child row: a foreign key constraint fails (`card_authorization`.`transactions`, CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE) 
+2025-04-11 00:15:36 [ERROR] [card-auth]: Failed to save error transaction: Cannot add or update a child row: a foreign key constraint fails (`card_authorization`.`transactions`, CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE) 
+2025-04-11 00:15:36 [INFO] [card-auth]: Authorization request processed in 48ms {"transactionId":"tx_5566778899","totalTimeMs":48,"processingTimeMs":48,"decision":"decline"}
+2025-04-11 00:20:03 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:20:03 [INFO] [card-auth]: Processing authorization request for transaction tx_5566778899 {"transactionId":"tx_5566778899","accountId":"acc_9876543210"}
+2025-04-11 00:20:03 [ERROR] [card-auth]: Authorization error: Cannot add or update a child row: a foreign key constraint fails (`card_authorization`.`transactions`, CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE) 
+2025-04-11 00:20:03 [ERROR] [card-auth]: Failed to save error transaction: Cannot add or update a child row: a foreign key constraint fails (`card_authorization`.`transactions`, CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE) 
+2025-04-11 00:20:03 [INFO] [card-auth]: Authorization request processed in 48ms {"transactionId":"tx_5566778899","totalTimeMs":48,"processingTimeMs":48,"decision":"decline"}
+2025-04-11 00:21:38 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-11 00:21:38 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-11 00:21:38 [INFO] [card-auth]: Database connection established successfully 
+2025-04-11 00:21:38 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-11 00:21:38 [INFO] [card-auth]: Server running on port 3000 
+2025-04-11 00:21:38 [INFO] [card-auth]: Environment: development 
+2025-04-11 00:21:38 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-11 00:21:39 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:21:39 [INFO] [card-auth]: Processing authorization request for transaction tx_5566778899 {"transactionId":"tx_5566778899","accountId":"acc_9876543210"}
+2025-04-11 00:21:39 [ERROR] [card-auth]: Authorization error: Cannot add or update a child row: a foreign key constraint fails (`card_authorization`.`transactions`, CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE) 
+2025-04-11 00:21:39 [ERROR] [card-auth]: Failed to save error transaction: Cannot add or update a child row: a foreign key constraint fails (`card_authorization`.`transactions`, CONSTRAINT `fk_transaction_account` FOREIGN KEY (`account_id`) REFERENCES `accounts` (`id`) ON DELETE CASCADE) 
+2025-04-11 00:21:39 [INFO] [card-auth]: Authorization request processed in 56ms {"transactionId":"tx_5566778899","totalTimeMs":56,"processingTimeMs":55,"decision":"decline"}
+2025-04-11 00:22:53 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-11 00:22:53 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-11 00:22:53 [INFO] [card-auth]: Database connection established successfully 
+2025-04-11 00:22:53 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-11 00:22:53 [INFO] [card-auth]: Server running on port 3000 
+2025-04-11 00:22:53 [INFO] [card-auth]: Environment: development 
+2025-04-11 00:22:53 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-11 00:23:11 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-11 00:23:11 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-11 00:23:11 [INFO] [card-auth]: Database connection established successfully 
+2025-04-11 00:23:11 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-11 00:23:11 [INFO] [card-auth]: Server running on port 3000 
+2025-04-11 00:23:11 [INFO] [card-auth]: Environment: development 
+2025-04-11 00:23:11 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-11 00:23:11 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:23:11 [INFO] [card-auth]: Processing authorization request for transaction tx_5566778899 {"transactionId":"tx_5566778899","accountId":"acc_9876543210"}
+2025-04-11 00:23:11 [INFO] [card-auth]: Authorization request processed in 13ms {"transactionId":"tx_5566778899","totalTimeMs":13,"processingTimeMs":13,"decision":"decline"}
+2025-04-11 00:25:24 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:25:24 [INFO] [card-auth]: Processing authorization request for transaction tx_63a2f8e4d9b7c {"transactionId":"tx_63a2f8e4d9b7c","accountId":"9cdd48a4-1694-11f0-a70a-28c5c8d80849"}
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Enriching transaction data for tx_63a2f8e4d9b7c 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Enrichment completed for tx_63a2f8e4d9b7c {"transactionId":"tx_63a2f8e4d9b7c","merchantName":"Best Buy"}
+2025-04-11 00:25:24 [WARN] [card-auth]: Enrichment service timed out for transaction tx_63a2f8e4d9b7c 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Evaluating 10 rules for transaction tx_63a2f8e4d9b7c 
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule High-Risk Card Tokens evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce08fb2-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":2}
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule High Amount Transaction evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9cdfc34a-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule Card Brand Restrictions evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce16503-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule Expired Card Check evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce104b8-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: device 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule New Device evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce26cec-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: account_pattern 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule Unusual Location evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce25eca-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: amount_anomaly 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule Amount Anomaly evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce26a31-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: time_pattern 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule Time Pattern Anomaly evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce26efd-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: merchant_pattern 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule Shopping Pattern Change evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce270bf-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":2}
+2025-04-11 00:25:24 [WARN] [card-auth]: Unknown condition type: data_retention 
+2025-04-11 00:25:24 [DEBUG] [card-auth]: Rule PCI Data Retention evaluation result: not matched {"transactionId":"tx_63a2f8e4d9b7c","ruleId":"9ce1dafb-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:25:24 [INFO] [card-auth]: Transaction tx_63a2f8e4d9b7c approved {"transactionId":"tx_63a2f8e4d9b7c","processingTimeMs":324}
+2025-04-11 00:25:24 [INFO] [card-auth]: Authorization request processed in 338ms {"transactionId":"tx_63a2f8e4d9b7c","totalTimeMs":338,"processingTimeMs":324,"decision":"approve"}
+2025-04-11 00:28:12 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:28:12 [WARN] [card-auth]: Card is expired: 12/2023 
+2025-04-11 00:29:37 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:29:37 [WARN] [card-auth]: Card is expired: 5/2024 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:32:03 [INFO] [card-auth]: Processing authorization request for transaction tx_ae47f91cd5b3 {"transactionId":"tx_ae47f91cd5b3","accountId":"9cdd48a4-1694-11f0-a70a-28c5c8d80849"}
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Enriching transaction data for tx_ae47f91cd5b3 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Enrichment completed for tx_ae47f91cd5b3 {"transactionId":"tx_ae47f91cd5b3","merchantName":"Apple Store"}
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Evaluating 10 rules for transaction tx_ae47f91cd5b3 
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule High-Risk Card Tokens evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce08fb2-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule High Amount Transaction evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9cdfc34a-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule Card Brand Restrictions evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce16503-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule Expired Card Check evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce104b8-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: device 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule New Device evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce26cec-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: account_pattern 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule Unusual Location evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce25eca-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: amount_anomaly 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule Amount Anomaly evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce26a31-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: time_pattern 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule Time Pattern Anomaly evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce26efd-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: merchant_pattern 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule Shopping Pattern Change evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce270bf-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:32:03 [WARN] [card-auth]: Unknown condition type: data_retention 
+2025-04-11 00:32:03 [DEBUG] [card-auth]: Rule PCI Data Retention evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce1dafb-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:03 [WARN] [card-auth]: Enrichment service timed out for transaction tx_ae47f91cd5b3 
+2025-04-11 00:32:03 [INFO] [card-auth]: Transaction tx_ae47f91cd5b3 approved {"transactionId":"tx_ae47f91cd5b3","processingTimeMs":269}
+2025-04-11 00:32:03 [INFO] [card-auth]: Authorization request processed in 285ms {"transactionId":"tx_ae47f91cd5b3","totalTimeMs":285,"processingTimeMs":269,"decision":"approve"}
+2025-04-11 00:32:56 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:32:56 [INFO] [card-auth]: Processing authorization request for transaction tx_ae47f91cd5b3 {"transactionId":"tx_ae47f91cd5b3","accountId":"9cdd48a4-1694-11f0-a70a-28c5c8d80849"}
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Enriching transaction data for tx_ae47f91cd5b3 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Enrichment completed for tx_ae47f91cd5b3 {"transactionId":"tx_ae47f91cd5b3","merchantName":"Tesla Motors"}
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Evaluating 10 rules for transaction tx_ae47f91cd5b3 
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule High-Risk Card Tokens evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce08fb2-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule High Amount Transaction evaluation result: matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9cdfc34a-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule Card Brand Restrictions evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce16503-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule Expired Card Check evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce104b8-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: device 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule New Device evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce26cec-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: account_pattern 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule Unusual Location evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce25eca-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: amount_anomaly 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule Amount Anomaly evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce26a31-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: time_pattern 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule Time Pattern Anomaly evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce26efd-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: merchant_pattern 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule Shopping Pattern Change evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce270bf-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:56 [WARN] [card-auth]: Unknown condition type: data_retention 
+2025-04-11 00:32:56 [DEBUG] [card-auth]: Rule PCI Data Retention evaluation result: not matched {"transactionId":"tx_ae47f91cd5b3","ruleId":"9ce1dafb-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:32:56 [WARN] [card-auth]: Enrichment service timed out for transaction tx_ae47f91cd5b3 
+2025-04-11 00:32:56 [INFO] [card-auth]: Transaction tx_ae47f91cd5b3 declined: rule_9cdfc34a-1694-11f0-a70a-28c5c8d80849 {"transactionId":"tx_ae47f91cd5b3","reasonCode":"rule_9cdfc34a-1694-11f0-a70a-28c5c8d80849","processingTimeMs":264}
+2025-04-11 00:32:56 [INFO] [card-auth]: Authorization request processed in 283ms {"transactionId":"tx_ae47f91cd5b3","totalTimeMs":283,"processingTimeMs":264,"decision":"decline"}
+2025-04-11 00:35:20 [DEBUG] [card-auth]: GET /api/v1/authorization/transaction/tx_ae47f91cd5b3 {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:35:33 [DEBUG] [card-auth]: GET /api/v1/authorization/transaction/tx_ae47f91cd5b3 {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:55:23 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:55:23 [INFO] [card-auth]: Processing authorization request for transaction tx_b7a9c5e3d1f8 {"transactionId":"tx_b7a9c5e3d1f8","accountId":"9cdd48a4-1694-11f0-a70a-28c5c8d80849"}
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Enriching transaction data for tx_b7a9c5e3d1f8 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Enrichment completed for tx_b7a9c5e3d1f8 {"transactionId":"tx_b7a9c5e3d1f8","merchantName":"Amazon"}
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Evaluating 10 rules for transaction tx_b7a9c5e3d1f8 
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule High-Risk Card Tokens evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce08fb2-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule High Amount Transaction evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9cdfc34a-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule Card Brand Restrictions evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce16503-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule Expired Card Check evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce104b8-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: device 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule New Device evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26cec-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: account_pattern 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule Unusual Location evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce25eca-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: amount_anomaly 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule Amount Anomaly evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26a31-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: time_pattern 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule Time Pattern Anomaly evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26efd-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: merchant_pattern 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule Shopping Pattern Change evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce270bf-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:55:23 [WARN] [card-auth]: Unknown condition type: data_retention 
+2025-04-11 00:55:23 [DEBUG] [card-auth]: Rule PCI Data Retention evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce1dafb-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:55:23 [WARN] [card-auth]: Enrichment service timed out for transaction tx_b7a9c5e3d1f8 
+2025-04-11 00:55:23 [INFO] [card-auth]: Transaction tx_b7a9c5e3d1f8 approved {"transactionId":"tx_b7a9c5e3d1f8","processingTimeMs":293}
+2025-04-11 00:55:23 [INFO] [card-auth]: Authorization request processed in 309ms {"transactionId":"tx_b7a9c5e3d1f8","totalTimeMs":309,"processingTimeMs":293,"decision":"approve"}
+2025-04-11 00:57:52 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-11 00:57:52 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-11 00:57:52 [INFO] [card-auth]: Database connection established successfully 
+2025-04-11 00:57:52 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-11 00:57:52 [INFO] [card-auth]: Server running on port 3000 
+2025-04-11 00:57:52 [INFO] [card-auth]: Environment: development 
+2025-04-11 00:57:52 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-11 00:58:35 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-11 00:58:35 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-11 00:58:35 [INFO] [card-auth]: Database connection established successfully 
+2025-04-11 00:58:35 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-11 00:58:35 [INFO] [card-auth]: Server running on port 3000 
+2025-04-11 00:58:35 [INFO] [card-auth]: Environment: development 
+2025-04-11 00:58:35 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-11 00:59:35 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-11 00:59:35 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-11 00:59:35 [INFO] [card-auth]: Database connection established successfully 
+2025-04-11 00:59:35 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-11 00:59:35 [INFO] [card-auth]: Server running on port 3000 
+2025-04-11 00:59:35 [INFO] [card-auth]: Environment: development 
+2025-04-11 00:59:35 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:59:40 [INFO] [card-auth]: Processing authorization request for transaction tx_b7a9c5e3d1f8 {"transactionId":"tx_b7a9c5e3d1f8","accountId":"9cdd48a4-1694-11f0-a70a-28c5c8d80849"}
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Enriching transaction data for tx_b7a9c5e3d1f8 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Enrichment completed for tx_b7a9c5e3d1f8 {"transactionId":"tx_b7a9c5e3d1f8","merchantName":"Amazon"}
+2025-04-11 00:59:40 [WARN] [card-auth]: Enrichment service timed out for transaction tx_b7a9c5e3d1f8 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Evaluating 10 rules for transaction tx_b7a9c5e3d1f8 
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule High-Risk Card Tokens evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce08fb2-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":3}
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule High Amount Transaction evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9cdfc34a-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule Card Brand Restrictions evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce16503-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule Expired Card Check evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce104b8-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: device 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule New Device evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26cec-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: account_pattern 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule Unusual Location evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce25eca-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: amount_anomaly 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule Amount Anomaly evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26a31-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: time_pattern 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule Time Pattern Anomaly evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26efd-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: merchant_pattern 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule Shopping Pattern Change evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce270bf-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:40 [WARN] [card-auth]: Unknown condition type: data_retention 
+2025-04-11 00:59:40 [DEBUG] [card-auth]: Rule PCI Data Retention evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce1dafb-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:40 [INFO] [card-auth]: Performing behavioral analysis for transaction tx_b7a9c5e3d1f8 
+2025-04-11 00:59:40 [INFO] [card-auth]: Transaction tx_b7a9c5e3d1f8 approved {"transactionId":"tx_b7a9c5e3d1f8","processingTimeMs":354}
+2025-04-11 00:59:40 [INFO] [card-auth]: Authorization request processed in 374ms {"transactionId":"tx_b7a9c5e3d1f8","totalTimeMs":374,"processingTimeMs":354,"decision":"approve"}
+2025-04-11 00:59:45 [DEBUG] [card-auth]: POST /api/v1/authorization/authorize {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-11 00:59:45 [INFO] [card-auth]: Processing authorization request for transaction tx_b7a9c5e3d1f8 {"transactionId":"tx_b7a9c5e3d1f8","accountId":"9cdd48a4-1694-11f0-a70a-28c5c8d80849"}
+2025-04-11 00:59:45 [DEBUG] [card-auth]: Enriching transaction data for tx_b7a9c5e3d1f8 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Enrichment completed for tx_b7a9c5e3d1f8 {"transactionId":"tx_b7a9c5e3d1f8","merchantName":"Amazon"}
+2025-04-11 00:59:46 [WARN] [card-auth]: Enrichment service timed out for transaction tx_b7a9c5e3d1f8 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Evaluating 10 rules for transaction tx_b7a9c5e3d1f8 
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule High-Risk Card Tokens evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce08fb2-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule High Amount Transaction evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9cdfc34a-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":0}
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule Card Brand Restrictions evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce16503-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":2}
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: card 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule Expired Card Check evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce104b8-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: device 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule New Device evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26cec-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: account_pattern 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule Unusual Location evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce25eca-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: amount_anomaly 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule Amount Anomaly evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26a31-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: time_pattern 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule Time Pattern Anomaly evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce26efd-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: merchant_pattern 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule Shopping Pattern Change evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce270bf-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":3}
+2025-04-11 00:59:46 [WARN] [card-auth]: Unknown condition type: data_retention 
+2025-04-11 00:59:46 [DEBUG] [card-auth]: Rule PCI Data Retention evaluation result: not matched {"transactionId":"tx_b7a9c5e3d1f8","ruleId":"9ce1dafb-1694-11f0-a70a-28c5c8d80849","evaluationTimeMs":1}
+2025-04-11 00:59:46 [INFO] [card-auth]: Performing behavioral analysis for transaction tx_b7a9c5e3d1f8 
+2025-04-11 00:59:46 [INFO] [card-auth]: Transaction tx_b7a9c5e3d1f8 approved {"transactionId":"tx_b7a9c5e3d1f8","processingTimeMs":292}
+2025-04-11 00:59:46 [INFO] [card-auth]: Authorization request processed in 313ms {"transactionId":"tx_b7a9c5e3d1f8","totalTimeMs":313,"processingTimeMs":292,"decision":"approve"}
+2025-04-13 16:25:02 [ERROR] [card-auth]: Error creating database:  
+2025-04-13 16:25:02 [ERROR] [card-auth]: Failed to initialize database:  
+2025-04-13 16:25:25 [INFO] [card-auth]: Checking if database 'card_authorization' exists 
+2025-04-13 16:25:25 [INFO] [card-auth]: Database 'card_authorization' already exists 
+2025-04-13 16:25:25 [INFO] [card-auth]: Database connection established successfully 
+2025-04-13 16:25:25 [INFO] [card-auth]: Tables already exist. Skipping schema creation. 
+2025-04-13 16:25:25 [INFO] [card-auth]: Server running on port 3000 
+2025-04-13 16:25:25 [INFO] [card-auth]: Environment: development 
+2025-04-13 16:25:25 [INFO] [card-auth]: API Documentation available at http://localhost:3000/api-docs 
+2025-04-13 16:25:28 [DEBUG] [card-auth]: GET /api-docs {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-13 16:25:28 [DEBUG] [card-auth]: GET /api-docs/ {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-13 16:25:28 [DEBUG] [card-auth]: GET /api-docs/swagger-ui.css {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-13 16:25:28 [DEBUG] [card-auth]: GET /api-docs/swagger-ui-bundle.js {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-13 16:25:28 [DEBUG] [card-auth]: GET /api-docs/swagger-ui-standalone-preset.js {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
+2025-04-13 16:25:28 [DEBUG] [card-auth]: GET /api-docs/swagger-ui-init.js {"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"}
